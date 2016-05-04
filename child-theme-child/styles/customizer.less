@@ -1,0 +1,32 @@
+@import "variables"; 
+@import "customBreakpoints"; 
+
+#header #topHeader,
+.mainMenuWrapper nav .menu-toggle,
+#toTop,
+.styledSidebarWidgets aside   {
+  background-color: @brandColor-main;
+}
+
+.mainMenuWrapper nav li.menu-item:hover > a,
+.mainMenuWrapper nav a:hover,
+.mainMenuWrapper li.menu-item-has-children:hover:after,
+h1, h2, h3, h4, h5, h6,
+a  {
+  color: @brandColor-main;
+}
+
+#header .site-branding,
+.styledSidebarWidgets aside:nth-child(2) {
+    background-color: @brandColor2;
+}
+
+#header .site-branding {
+@media(@min-sm){
+    background-color: rgba(0, 0, 0, 0.4);
+  }  
+}
+
+
+// keep this var to overrule the the brandcolors with the colorpicker
+@brandColor1: @customColor;

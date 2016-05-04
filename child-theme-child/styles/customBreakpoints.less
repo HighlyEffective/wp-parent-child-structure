@@ -1,0 +1,20 @@
+
+ 
+/* ==========================================================================
+   Breakpoints - November 2014
+   ========================================================================== */
+
+    // Media queries
+    @breakpoint-sm: 568px;
+    @breakpoint-md: 800px;
+    @breakpoint-lg: 960px;
+
+
+    //shortcut media: " @media(@min-xs) { //rules }"
+    @min-sm: ~'min-width: @{breakpoint-sm}'; 
+    @min-md: ~'min-width: @{breakpoint-md}';
+    @min-lg: ~'min-width: @{breakpoint-lg}';
+
+    @max-sm: ~'max-width: @{breakpoint-sm}'; 
+    @max-md: ~'max-width: @{breakpoint-md}';
+    @max-lg: ~'max-width: @{breakpoint-lg}';

@@ -1,0 +1,41 @@
+/* ==========================================================================
+   LESS Variables 
+   ========================================================================== */
+
+/*** FONTS ***/
+@font-base: Tahoma, Arial, sans-serif;
+
+/*** COLOR SETTINGS - ORIGINAL ***/
+@brandColor1: #1792d5;
+
+@brandColor2:darken(@brandColor1, 24%);
+
+// Default LESS Vars
+// font-base?
+// font-comp(lementary)?
+@brandColor-main: @brandColor1;
+
+@brandColor-main-tint1: spin( lighten(@brandColor-main, 12%), 5);
+@brandColor-main-tint2: spin( lighten(@brandColor-main, 23%), 10);
+@brandColor-main-shade1: spin( darken(@brandColor-main, 12%), 5);
+@brandColor-main-shade2: spin( darken(@brandColor-main, 23%), 10);
+
+@brandColor-main-analog1: spin( lighten(@brandColor-main, 3%), 58);
+@brandColor-main-analog2: spin( lighten(@brandColor-main, 18%), 30);
+@brandColor-main-analog3: spin( lighten(@brandColor-main, 11%), -33);
+@brandColor-main-analog4: spin( lighten(@brandColor-main, 3%), -59);
+
+@brandColor-main-triad1: spin(@brandColor-main, 124);
+@brandColor-main-triad2: spin(saturate(@brandColor-main, 12%), 127);
+@brandColor-main-triad3: spin(@brandColor-main, 245);
+@brandColor-main-triad4: spin(saturate(@brandColor-main, 16%), 248);
+
+@brandColor-main-comp1: darken( desaturate(@brandColor-main, 13%), 8%);
+@brandColor-main-comp2: lighten( saturate(@brandColor-main, 12%), 14%);
+@brandColor-main-comp3: spin( darken(@brandColor-main, 7%), 180);
+@brandColor-main-comp4: spin( lighten(@brandColor-main, 16%), 180);
+
+@brandColor-secondary: @brandColor2;
+@brandColor-tertiary: @brandColor-main-shade1;
+@brandColor-accent: @brandColor-main-analog4;
+@callToAction: @brandColor-main-comp3;
